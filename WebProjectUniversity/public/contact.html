@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/21d40716d7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- Font Awesome Close Icon -->
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></a></li>
+                    <li><a href="about.html">ABOUT</a></a></li>
+                    <li><a href="courses.html">COURSE</a></a></li>
+                    <li><a href="programs.html">PROGRAM</a></a></li>
+                    <li><a href="contact.html">CONTACT</a></a></li>
+                </ul>
+            </div>
+            <!-- Font Awesomme Bar Icon -->
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+    <!-- Contact Us Section -->
+
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.0551046990736!2d-58.38912698429393!3d-34.804555475660244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd3444041030f%3A0x6b5c149f4060e4e5!2sJorge%201066%2C%20B1846EOK%20Adrogu%C3%A9%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1623103694766!5m2!1sen!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>Argentina, Buenos Aires, Adrogué</h5>
+                        <p>Jorge 1066</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+11 69799250</h5>
+                        <p>Monday - Friday, 9:00AM - 20:00PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                <span>
+                    <h5>kevaaguilera@gmail.com</h5>
+                    <p>Email Us</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+
+        <form action="">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter your email adress" required>
+            <input type="subject" placeholder="Subject" required>
+            <textarea rows="10" placeholder="Message" required></textarea>
+            <button type="submit" class="h-btn red-btn">Send Message</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab aliquid. Porro, odio necessitatibus
+            ullam libero officia iusto debitis doloribus provident <br>quia laudantium alias tempore possimus, commodi
+            esse labore distinctio.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </section>
+
+    <!-- Js Toggle -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-150px";
+        }
+
+    </script>
+</body>
+
+</html>

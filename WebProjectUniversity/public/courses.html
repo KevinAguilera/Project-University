@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google fonts --> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/21d40716d7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- Font Awesome Close Icon -->
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></a></li>
+                    <li><a href="about.html">ABOUT</a></a></li>
+                    <li><a href="courses.html">COURSE</a></a></li>
+                    <li><a href="programs.html">PROGRAM</a></a></li>
+                    <li><a href="contact.html">CONTACT</a></a></li>
+                </ul>
+            </div>
+            <!-- Font Awesomme Bar Icon -->
+            <i class="fas fa-bars"onclick="showMenu()"></i> 
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!-- Course Section -->
+    <section class="course">
+        <h1>Take A Look At Our Courses</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+        
+        <div class="row">
+            <div class="course-col">
+                <h3>Basic</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum debitis nobis expedita voluptatum repellendus? Obcaecati odio asperiores qui eaque consequatur quas, accusamus ducimus quisquam delectus, iste ratione? Odit, nostrum facilis!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum debitis nobis expedita voluptatum repellendus? Obcaecati odio asperiores qui eaque consequatur quas, accusamus ducimus quisquam delectus, iste ratione? Odit, nostrum facilis!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Advanced</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum debitis nobis expedita voluptatum repellendus? Obcaecati odio asperiores qui eaque consequatur quas, accusamus ducimus quisquam delectus, iste ratione? Odit, nostrum facilis!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities">
+        <h1>Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/campus1.jpg">
+                <h3>Entrance</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quisquam quam tempore autem. Quisquam odit molestias porro, voluptatem libero quos. Veritatis molestiae animi praesentium voluptas soluta. Beatae dolorum fugit qui.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/campus3.jpg">
+                <h3>Front</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quisquam quam tempore autem. Quisquam odit molestias porro, voluptatem libero quos. Veritatis molestiae animi praesentium voluptas soluta. Beatae dolorum fugit qui.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/campus2.jpg">
+                <h3>Garden</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quisquam quam tempore autem. Quisquam odit molestias porro, voluptatem libero quos. Veritatis molestiae animi praesentium voluptas soluta. Beatae dolorum fugit qui.</p>  
+            </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us </h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ab aliquid. Porro, odio necessitatibus ullam libero officia iusto debitis doloribus provident <br>quia laudantium alias tempore possimus, commodi esse labore distinctio.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </section>
+
+    <!-- Js Toggle -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right = "-150px";
+        }
+
+    </script>
+</body>
+</html>
